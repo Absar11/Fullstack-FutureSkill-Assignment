@@ -1,0 +1,72 @@
+/* Header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #000;
+    color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+}
+
+.header-left h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-right .submit-button {
+    padding: 20px 30px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 1px solid white;
+}
+
+.header-right .submit-button:hover {
+    background-color: #1b1919;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header {
+        padding: 20px 40px; /* Reduce padding on smaller screens */
+    }
+
+    .header-left h1 {
+        font-size: 20px; /* Slightly smaller font size for smaller screens */
+    }
+
+    .header-right .submit-button {
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Slightly smaller font size for the button */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column; /* Stack items vertically on very small screens */
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    .header-left h1 {
+        font-size: 18px; /* Further reduce the font size */
+        margin-bottom: 10px; /* Add margin to separate the title from the button */
+    }
+
+    .header-right .submit-button {
+        padding: 10px 20px;
+        width: 100%; /* Make the button take the full width */
+        font-size: 16px;
+    }
+}
