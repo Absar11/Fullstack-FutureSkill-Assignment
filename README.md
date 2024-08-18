@@ -93,6 +93,7 @@ To start the backend server:
 
 1. **Ensure MongoDB is running on your machine.**
 2. **Start the backend server:**
+3. **Don't forget to create .env file in backend folder set MongoURI and PORT NO.**
 
    cd backend
    npm start
