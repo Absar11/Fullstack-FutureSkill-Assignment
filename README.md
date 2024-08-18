@@ -54,6 +54,7 @@ This project implements a Help Center API with a React frontend and a Node.js ba
 1. **Clone the repository:**
 
 git clone https://github.com/Absar11/Fullstack-FutureSkill-Assignment.git
+
 cd Fullstack-FutureSkill-Assignment
 
 
