@@ -1,8 +1,7 @@
-// CardList.jsx
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Search from "./Search";
-import "./CardList.css"; // Import the CSS file
+import "./CardList.css";
 import CreateCard from "./CreateCard";
 
 const CardList = () => {
@@ -15,7 +14,7 @@ const CardList = () => {
       try {
         const response = await axios.get("/api/cards");
         setCards(response.data);
-        setFilteredCards(response.data); // Initially, show all cards
+        setFilteredCards(response.data);
       } catch (error) {
         console.error("Error fetching cards:", error);
       }
@@ -31,7 +30,7 @@ const CardList = () => {
       );
       setFilteredCards(searchFilteredCards);
     } else {
-      setFilteredCards(cards); // Show all cards if no search term
+      setFilteredCards(cards);
     }
   }, [searchTerm, cards]);
 

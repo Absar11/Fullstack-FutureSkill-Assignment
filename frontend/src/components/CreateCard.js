@@ -1,9 +1,8 @@
-// CreateCard.jsx
 import React, { useState } from "react";
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "./CreateCard.css"; // Import the CSS file
+import "./CreateCard.css";
 
 const CreateCard = () => {
   const [title, setTitle] = useState("");
@@ -19,7 +18,6 @@ const CreateCard = () => {
       setDescription("");
       toast.success("New card added successfully!");
 
-      // Optionally refresh the page to see the new card
       setTimeout(() => {
         window.location.reload();
       }, 3000);
@@ -31,7 +29,7 @@ const CreateCard = () => {
 
   return (
     <div className="create-card-container">
-      <ToastContainer /> {/* ToastContainer should be included */}
+      <ToastContainer />
       <form onSubmit={handleSubmit}>
         <h2>Create a New Card</h2>
         <input

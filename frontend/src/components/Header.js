@@ -1,6 +1,5 @@
-// Header.jsx
 import React from "react";
-import "./Header.css"; // Import the CSS file for styling
+import "./Header.css";
 import Logo from "../assets/logo.jpg";
 
 const Header = () => {
